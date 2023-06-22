@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  min-height:100vh;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #333;
+  color: rgb(252, 252, 252);
+  height: 65px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.user-list ul{
+  /* yan yana diziyor */
+  display: flex; 
+  /* sayfa büyüdükçe resimler otamatik yer alıyor */
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.user-list ul li {
+  /* noktaları sildi */
+  list-style: none;
+}
+
+.single-user{
+  /* fotoyla isim yan yana gelsin diye. */
+  display: flex;
+  /* ortaladı */
+  justify-content: center;
+  /* ortaladı */
+  align-items: center;
+  /* yatayda boyut */
+  width: 400px;
+  background-color: #888;
+  /* kenerlarını yuvarlatıyor */
+  border-radius: 10px;
+  /* birbirlerinden ayrılmasını sağlıyor */
+  margin: 20px;
+  /* genişlemesini sağladı */
+  padding: 10px 20px;
+  /* yazının rengi */
+  color: #fff;
+  font-size: 1rem;
+}
+
+.single-user img{
+  /* resmin sağına 20 px boşluk attı */
+margin-right: 20px;
+/* resmi yuvarlattı */
+border-radius: 100px;
+}
+
+.user-info .user-mail{
+   margin: 10px 0;
+}
